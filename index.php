@@ -11,6 +11,7 @@
     
 <?php
 # Snack 1
+echo "<h1>Snack 1</h1>";
 $matchs = array (
   array("Olimpia Milano",55,"Cantù",60),
   array("Booleaners",100,"Self-taught",60),
@@ -23,6 +24,7 @@ foreach ($matchs as $match) {
 };
 
 # Snack 2
+echo "<h1>Snack 2</h1>";
 if(isset($_GET["name"]) && isset($_GET["mail"]) && isset($_GET["age"])){
     $name = $_GET["name"];
     $mail = $_GET["mail"];
@@ -38,6 +40,8 @@ if(isset($_GET["name"]) && isset($_GET["mail"]) && isset($_GET["age"])){
 echo $msg;
 
 #Snack 4
+echo "<h1>Snack 4</h1>";
+
     function getArray($n, $min = 0, $max = 10){
         $array = [];
         while(count($array) < $n){
@@ -56,6 +60,8 @@ echo $msg;
     echo "</ul>";
 
 #Snack 5
+echo "<h1>Snack 5</h1>";
+
     $text = "Praesent blandit commodo magna eget lobortis. Maecenas rutrum odio quam, vitae vulputate lorem tristique sed. Vivamus lobortis, risus commodo tincidunt venenatis, mauris diam feugiat est, id euismod tellus tortor a leo. Sed lobortis magna a iaculis congue. Sed in enim porta, aliquet felis non, consequat mi. Morbi sit amet justo vulputate, efficitur erat quis, volutpat velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In congue venenatis quam eu accumsan. Praesent eu imperdiet nibh. Phasellus sed diam rhoncus, scelerisque arcu sit amet, bibendum magna. Nam dignissim fringilla erat eget pellentesque. Pellentesque dapibus erat et ipsum faucibus posuere. Donec pellentesque enim sit amet lectus malesuada dapibus. Maecenas feugiat mi et imperdiet egestas. Morbi dapibus, nulla ut consectetur fermentum, metus lorem dictum enim, vitae gravida metus velit nec lectus. Sed accumsan leo nulla.";
     $paragraphs = explode(".", $text);
     foreach ($paragraphs as $p) {
