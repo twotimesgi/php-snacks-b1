@@ -1,18 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacks</title>
+    <title>Document</title>
 </head>
 <body>
-
+    
 <?php
-/*
-
-
-
 # Snack 1
 $matchs = array (
   array("Olimpia Milano",55,"Cantù",60),
@@ -52,16 +49,18 @@ echo $msg;
         return $array;
     }
     $arr = getArray(10);
-    var_dump($arr);
-?>
+    echo "<ul>";
+    foreach ($arr as $number) {
+        echo "<li>".$number."</li>";
+    };
+    echo "</ul>";
 
-<?php
 #Snack 5
     $text = "Praesent blandit commodo magna eget lobortis. Maecenas rutrum odio quam, vitae vulputate lorem tristique sed. Vivamus lobortis, risus commodo tincidunt venenatis, mauris diam feugiat est, id euismod tellus tortor a leo. Sed lobortis magna a iaculis congue. Sed in enim porta, aliquet felis non, consequat mi. Morbi sit amet justo vulputate, efficitur erat quis, volutpat velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In congue venenatis quam eu accumsan. Praesent eu imperdiet nibh. Phasellus sed diam rhoncus, scelerisque arcu sit amet, bibendum magna. Nam dignissim fringilla erat eget pellentesque. Pellentesque dapibus erat et ipsum faucibus posuere. Donec pellentesque enim sit amet lectus malesuada dapibus. Maecenas feugiat mi et imperdiet egestas. Morbi dapibus, nulla ut consectetur fermentum, metus lorem dictum enim, vitae gravida metus velit nec lectus. Sed accumsan leo nulla.";
-    var_dump(explode(".", $text));
-
-
-*/
+    $paragraphs = explode(".", $text);
+    foreach ($paragraphs as $p) {
+        echo "<p>".$p."</p>";
+    };
 ?>
 </body>
 </html>
